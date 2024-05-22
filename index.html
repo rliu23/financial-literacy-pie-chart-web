@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Literacy Pie Chart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Literacy Pie Chart</h1>
+        <form id="dataForm">
+            <label for="budget" style="font-weight: bold;text-align:center;">Budget</label><br>
+            <input type="number" style="width: 130px;font-size: 16px;text-align: center;" id="budget" placeholder="Enter budget" required>
+          
+            <div class="summary">
+              <p>Total Expenses<span id="totalExpenses"></span></p>
+              <p>Remaining Budget<span id="remainingBudget"></span></p>
+            </div>
+            <div id="reduceExpensesText" style="color: red;font-size: 23px; text-align: center; margin-top: 20px; display: none;font-weight: 700;">Expenses over budget.<br>Reduce expenses or increase budget.</div>
+            <table id="inputTable">
+                <thead>
+                    <tr>
+                        <th>Category Name</th>
+                        <th>Amount</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <button id="addRowBtn" type="button">Add Row</button>
+            <!--<button type="submit">Update Chart</button>-->
+        </form>
+        
+        <canvas id="pieChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
