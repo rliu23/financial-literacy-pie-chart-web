@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 title: {
                     display: true,
-                    text: 'All Expenses'
+                    text: 'Expenses'
                 }
             }
         },
