@@ -101,7 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <td><input type="text" name="category" placeholder="Category Name" required></td>
             <td><input type="number" name="amount" placeholder="Amount" required></td>
             <td><button type="button" class="deleteBtn">Delete</button></td>
-            <td><input type="checkbox" name="fixed"></td>
         `;
 
         newRow.querySelector('.deleteBtn').addEventListener('click', () => {
